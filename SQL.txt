@@ -1,0 +1,17 @@
+Q1. Write a query for Employee names who have manager and manager name 
+ANS: -
+SELECT e.first_name AS EmployeeName, e.last_name AS EmployeeLastName,
+       m.first_name AS ManagerName, m.last_name AS ManagerLastName
+FROM employees e
+JOIN employees m ON e.manager_id = m.employee_id;
+
+Q.2. Write a query for all employee whose city is same as their corresponding manager city
+
+ANS: - Select EmpName from Employees table where EmployeeCity =ManagerCity;
+
+Q.3 write SQL query forget all managers with ID,name;
+ANS: - Select ALL ManagerID , ManagerName from employees;
+
+Q.4. Write SQL Query for return employee names whose employee city= manager city
+ANS: - Select EmpName from Employee table where EmployeeCity =ManagerCity;
+
